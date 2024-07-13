@@ -70,7 +70,8 @@ const RideOptionsCard = () => {
               paddingLeft: 40,
               paddingRight: 40,
               alignItems: "center",
-              backgroundColor: id === selected.id ? "#e5e7eb" : "#fff"
+              backgroundColor:
+                selected != null && id === selected.id ? "#e5e7eb" : "#fff",
             }}
           >
             <Image
