@@ -64,9 +64,14 @@ const RideOptionsCard = () => {
           <TouchableOpacity
             disable={!selected}
             onPress={() => setSelected(item)}
-            style={tw`flex-row justify-between px-10 items-center ${
-              id === selected?.id && "bg-gray-200"
-            }`}
+            style={{
+              flexDirection: "row",
+              justifyContent: "space-between",
+              paddingLeft: 40,
+              paddingRight: 40,
+              alignItems: "center",
+              backgroundColor: id === selected.id ? "#e5e7eb" : "#fff"
+            }}
           >
             <Image
               style={{ width: 100, height: 100, resizeMode: "contain" }}
